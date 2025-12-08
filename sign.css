@@ -5,17 +5,16 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Light Mode (default) */
 body {
     background: #fffbf0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Dark Mode */
 body.dark-mode {
     background: #1e1e1e;
     color: white;
@@ -29,15 +28,13 @@ body.dark-mode {
 
 #themeToggle {
     padding: 10px 20px;
-    border: none;
     background: #ff6b00;
     color: white;
-    border-radius: 5px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: 600;
 }
 
-/* Main Container */
 .container {
     background: white;
     width: 350px;
@@ -45,44 +42,23 @@ body.dark-mode {
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     text-align: center;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
 }
 
-/* Dark UI for container */
 body.dark-mode .container {
     background: #2d2d2d;
-    box-shadow: 0 6px 12px rgba(255,255,255,0.1);
-}
-
-.logo {
-    font-size: 35px;
-    font-weight: 700;
-    color: #ff6b00;
-    margin-bottom: 10px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-weight: 600;
 }
 
 .input-group {
-    text-align: left;
     margin-bottom: 15px;
-}
-
-.input-group label {
-    font-size: 14px;
+    text-align: left;
 }
 
 .input-group input {
     width: 100%;
     padding: 12px;
-    font-size: 14px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    margin-top: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode .input-group input {
@@ -95,34 +71,24 @@ body.dark-mode .input-group input {
     padding: 12px;
     background: #ff6b00;
     color: white;
-    font-size: 16px;
     border: none;
     border-radius: 8px;
-    margin-top: 15px;
     cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    background: #e65d00;
 }
 
 .msg {
-    margin-top: 15px;
+    margin-top: 10px;
     color: green;
-    font-weight: 600;
 }
 
-body.dark-mode .msg {
-    color: #90ee90;
-}
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
 
-.links {
-    margin-top: 15px;
-    font-size: 14px;
-}
-
-.links a {
-    text-decoration: none;
-    color: #ff6b00;
+    #themeToggle {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }
