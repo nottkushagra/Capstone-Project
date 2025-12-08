@@ -16,6 +16,7 @@
 .item-details h3 {
     font-size: 20px;
     color: #333;
+    margin-bottom: 5px;
 }
 
 .item-details p {
@@ -26,6 +27,7 @@
 .item-price p {
     font-size: 18px;
     font-weight: bold;
+    color: #333;
 }
 
 .cart-total {
@@ -35,6 +37,7 @@
 .cart-total p {
     font-size: 24px;
     font-weight: bold;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -48,11 +51,14 @@
     cursor: pointer;
 }
 
+
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
     .cart-item {
         flex-direction: column;
-        text-align: center;
         gap: 10px;
+        text-align: center;
     }
 
     .cart-total {

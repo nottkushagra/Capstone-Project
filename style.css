@@ -25,7 +25,7 @@ header .container {
 }
 
 .logo img {
-    width: 160px;
+    width: 180px;
 }
 
 nav ul {
@@ -89,22 +89,94 @@ main {
     cursor: pointer;
 }
 
+.restaurants-container h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .restaurant-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
+
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.restaurant-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0 5px;
+}
+
+.restaurant-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #282c3f;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links ul, .social-media ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-links li, .social-media li {
+    margin: 0 15px;
+}
+
+.footer-links a, .social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.bottom-footer {
+    background-color: #1f2230;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bottom-footer p {
+    margin: 0;
+}
+
+
+/* RESPONSIVE ADDED BELOW */
 
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
-        text-align: center;
+        gap: 15px;
     }
 
     nav ul {
-        flex-direction: row;
         gap: 15px;
-        margin-top: 10px;
     }
 
     .search-container h1 {
@@ -113,24 +185,24 @@ main {
 
     .search-bar {
         flex-direction: column;
+        width: 100%;
         align-items: center;
     }
 
-    .search-bar input {
-        width: 90%;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
+    .search-bar input,
     .search-bar button {
         width: 90%;
         border-radius: 5px;
+    }
+
+    .search-bar button {
+        margin-top: 10px;
     }
 }
 
 @media (max-width: 480px) {
     .logo img {
-        width: 120px;
+        width: 140px;
     }
 
     nav ul {

@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 20px;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: 0.3s;
 }
 
 body.dark-mode {
@@ -42,23 +42,42 @@ body.dark-mode {
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     text-align: center;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 body.dark-mode .container {
     background: #2d2d2d;
 }
 
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+    color: #ff6b00;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
 .input-group {
-    margin-bottom: 15px;
     text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
 }
 
 .input-group input {
     width: 100%;
     padding: 12px;
+    font-size: 14px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    margin-top: 5px;
 }
 
 body.dark-mode .input-group input {
@@ -71,15 +90,34 @@ body.dark-mode .input-group input {
     padding: 12px;
     background: #ff6b00;
     color: white;
+    font-size: 16px;
     border: none;
     border-radius: 8px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
 .msg {
-    margin-top: 10px;
+    margin-top: 15px;
     color: green;
 }
+
+body.dark-mode .msg {
+    color: #90ee90;
+}
+
+.links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #ff6b00;
+}
+
+
+/* RESPONSIVE */
 
 @media (max-width: 480px) {
     .container {
